@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <p style="font-weight: bold; font-size: larger;">Seberapa Hafal Anda Dengan Gen 12</p>
+        <div id="score-container">
+            <p>Benar: <span id="correct">0</span></p>
+            <p>Salah: <span id="incorrect">0</span></p>
+        </div>
+        <div id="card">
+            <div id="foto-container">
+                <img id="foto" src="" alt="Artis">
+            </div>
+            <div id="choices-container">
+                <button class="choice-btn" onclick="checkAnswer(this)"></button>
+                <button class="choice-btn" onclick="checkAnswer(this)"></button>
+                <button class="choice-btn" onclick="checkAnswer(this)"></button>
+                <button class="choice-btn" onclick="checkAnswer(this)"></button>
+            </div>
+        </div>
+        <p style="font-size: smaller; padding-top: 2vh;">Created by _Ryuu48</p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

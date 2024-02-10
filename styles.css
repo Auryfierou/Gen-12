@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#score-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+#card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#foto-container {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+#foto {
+    max-height: 450px;
+    max-width: 500px;
+    height: auto;
+}
+
+#choices-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.choice-btn {
+ --color: #560bad;
+ font-family: inherit;
+ display: inline-block;
+ width: 12em;
+ height: 2.6em;
+ line-height: 2.5em;
+ margin: 5px;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 500;
+ cursor: pointer;
+ color: var(--color);
+}
+
+.choice-btn:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 150px;
+ width: 300px;
+ border-radius: 50%;
+}
+
+.choice-btn:hover {
+ color: #fff;
+}
+
+.choice-btn:before {
+ top: 100%;
+ left: 100%;
+ transition: all .3s;
+}
+
+.choice-btn:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+.choice-btn:active:before {
+ background: #3a0ca3;
+ transition: background 0s;
+}
